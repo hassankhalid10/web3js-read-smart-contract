@@ -1,0 +1,21 @@
+Deployment of Smart Contract using web3js::
+
+This script reads a Solidity smart contract from a file, compiles it using the Solidity compiler, and deploys it to a local Ethereum network (like Ganache). It performs the following steps:
+
+1. **Read the Contract File:** Reads the Solidity file (`demo.sol`) containing the smart contract code.
+2. **Compile the Contract:** Uses the Solidity compiler (`solc`) to compile the contract code into bytecode and ABI.
+3. **Extract ABI and Bytecode:** Retrieves the ABI and bytecode from the compiled output.
+4. **Deploy the Contract:** Deploys the compiled contract to the local Ethereum network using Web3, and logs the contract address and deployment status.
+
+**Commands to Run:**
+1. **Install Dependencies:**
+   ```bash
+   npm install solc fs web3
+   ```
+
+2. **Run the Script:**
+   ```bash
+   node your-script-file.js
+   ``` 
+
+Replace `your-script-file.js` with the filename where the script is saved.
